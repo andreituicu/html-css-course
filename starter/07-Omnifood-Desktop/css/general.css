@@ -25,7 +25,7 @@ paragraph default: 1.6
 - Primary: #e67e22
 
 - Tints: #fdf2e9 #fae5d3
-- Shades: #cf711f
+- Shades: #cf711f #eb984e
 - Accents:
 - Greys:
 #6f6f6f lightest gray allowed on #fdf2e9
@@ -52,6 +52,11 @@ Medium: 11px
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgb(230, 126, 34, 0.5);
 }
 
 html {
@@ -109,6 +114,7 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -116,13 +122,29 @@ body {
   text-decoration: none;
   font-size: 2rem;
   font-weight: 600;
-  color: #fff;
+  /* color: #fff; */
 
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
 
   /* Put transition on the original state */
   transition: all 0.3s;
+
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn--form {
+  background-color: #45240a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .btn--full:link,
