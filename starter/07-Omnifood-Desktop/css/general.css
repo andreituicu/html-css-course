@@ -69,6 +69,7 @@ html {
   /* Percentage of user's browser font-size sizing */
   font-size: 62.5%;
   overflow-x: hidden;
+  /* scroll-behavior: smooth; Does NOT work on Safari. */
 }
 
 body {
